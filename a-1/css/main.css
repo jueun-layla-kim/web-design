@@ -17,3 +17,13 @@ body {
     font-size: 14px;
     color: #222;
 }
+
+.header {
+}
+
+.header .logo {
+    font-size: 28px;
+}
+
+.header .nav {
+}
