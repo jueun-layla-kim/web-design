@@ -45,13 +45,113 @@ body {
     padding: 0 50px;
 }
 
-.gnb > li > a:hover {
-    color: dodgerblue;
+.gnb > li:hover > a {
+    color: orangered;
 }
 
 .gnb .sub {
     position: absolute;
     top: 100px;
     left: 0;
+    background-color: #eee;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    display: none;
 }
 
+.gnb .sub li a {
+    display: block;
+    padding: 14px;
+}
+
+.gnb .sub li a:hover {
+    background-color: #666;
+    color: #fff;
+}
+
+.slider {
+    height: 300px;
+    overflow: hidden;
+}
+
+.slide img {
+    display: block;
+}
+
+.contents {
+    display: flex;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.tab, .banner, .link {
+    width: 390px;
+}
+
+.banner img, .link img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.tab_title {
+    display: flex;
+    gap: 4px;
+    border-bottom: 3px solid orangered;
+}
+
+.tab_title h3 {
+    height: 42px;
+    background-color: #ddd;
+    flex: 1;
+    text-align: center;
+    line-height: 42px;
+    font-weight: normal;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tab_title h3.active {
+    background-color: orangered;
+    color: white;
+}
+
+.notice {
+    padding: 10px;
+}
+
+.notice li {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+}
+
+.notice li a:hover {
+    text-decoration: underline;
+}
+
+.tab_contents .gallery {
+    display: none;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.gallery li {
+    display: inline-block;
+    padding: 25px 14px;
+}
+
+.footer {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #ddd;
+}
+
+.modal {
+    display: none;
+}
