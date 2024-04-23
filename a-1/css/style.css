@@ -33,6 +33,7 @@ body {
 .gnb {
     display: flex;
     align-items: center;
+    z-index: 1;
 }
 
 .gnb > li {
@@ -74,6 +75,13 @@ body {
 .slider {
     height: 300px;
     overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .slide {
