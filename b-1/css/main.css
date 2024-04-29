@@ -222,15 +222,20 @@ body {
 }
 
 .modal {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
     padding: 30px;
     width: 560px;
-    height: 400px;
+    height: 380px;
+    border: 1px solid #999;
     display: none;
+}
+
+.modal .container {
+    position: relative;
 }
 
 .modal h2 {
@@ -244,4 +249,7 @@ body {
 
 .modal button {
     padding: 6px 12px;
+    position: absolute;
+    bottom: -60;
+    right: 0;
 }
