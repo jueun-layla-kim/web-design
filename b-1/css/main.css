@@ -16,6 +16,7 @@ a {
 body {
     background-color: #fff;
     color: #333;
+    font-size: 16px;
 }
 
 .wrap {
@@ -32,6 +33,7 @@ body {
 
 .gnb {
     display: flex;
+    z-index: 1;
 }
 
 .gnb > li {
@@ -59,7 +61,6 @@ body {
     background-color: #eee;
     padding: 6px;
     display: none;
-    /* z-index: 1; */
 }
 
 .gnb ul a {
@@ -114,14 +115,60 @@ body {
     width: 390px;
 }
 
-.tab_title {}
+.tab_title {
+    display: flex;
+    gap: 4px;
+    border-bottom: solid 3px dodgerblue;
+}
+
+.tab_title h4 {
+    height: 42px;
+    flex: 1;
+    text-align: center;
+    line-height: 42px;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.tab_title h4.active {
+    background-color: dodgerblue;
+    color: #fff;
+}
 
 .tab_contents {
+    font-size: 14px;
+    padding: 6px;
+}
+
+.notice {
+    display: block;
+    /* display: none; */
+}
+
+.notice li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notice li a {
+    display: block;
+    padding: 6px 4px;
+}
+
+.notice li a:hover {
+    text-decoration: underline;
+}
+
+.gallery {
+    text-align: center;
     display: none;
 }
 
-.notice {}
-.gallery {}
+.gallery li {
+    display: inline-block;
+    padding: 12px;
+}
 
 .banner {
     width: 390px;
@@ -145,7 +192,56 @@ body {
     background-color: #eee;
 }
 
+.f_logo {
+    width: 200px;
+}
+
+.f_logo img {
+    filter: grayscale(1);
+}
+
+.f_contents {
+    flex: 1;
+    text-align: center;
+}
+
 .f_menu {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.f_menu li {
+    border-right: 1px solid #999;
+    padding: 0 20px;
+}
+
+.f_menu li:last-child {
+    border: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 30px;
+    width: 560px;
+    height: 400px;
+    display: none;
+}
+
+.modal h2 {
+    padding-top: 20px;
+}
+
+.modal p {
+    margin: 30px 0;
+    line-height: 1.6;
+}
+
+.modal button {
+    padding: 6px 12px;
 }
