@@ -78,6 +78,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    display: none;
 }
 
 .slide img {
@@ -231,7 +232,7 @@ body {
     background-color: #fff;
     padding: 30px;
     border: 1px solid #999;
-    /* display: none; */
+    display: none;
 }
 
 .modal p {
