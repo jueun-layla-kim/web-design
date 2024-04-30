@@ -20,6 +20,32 @@ body {
 }
 
 .wrap {
+    width: 1000px;
     display: flex;
 }
 
+.header {
+    width: 200px;
+}
+
+.logo {
+    padding: 50px 0;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.gnb_container {
+    padding: 0 10px;
+}
+
+.gnb > li > a {
+    display: block;
+    padding: 16px;
+    text-align: center;
+}
+
+.sub {
+    display: none;
+}
