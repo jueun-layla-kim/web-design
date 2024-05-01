@@ -10,9 +10,21 @@
     width: calc(100% - 200px);
 }
 
+.slider {
+    height: 400px;
+}
+
+.banner_container {
+    height: 200px;
+}
+
+.tab {
+    height: 250px;
+}
+
 .footer {
     display: flex;
-    height: 100px;
+    height: 120px;
     align-items: center;
 }
 

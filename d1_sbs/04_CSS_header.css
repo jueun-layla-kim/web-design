@@ -11,19 +11,20 @@
 }
 
 .gnb {
-    position: relative;
     text-align: center;
+    position: relative;
 }
 
 .gnb > li {
     position: relative;
+    margin-bottom: -1px;
 }
 
 .gnb > li > a {
     display: block;
+    border: 1px solid #999;
     height: 56px;
     line-height: 56px;
-    border: 1px solid #999;
 }
 
 .gnb > li:hover > a {
@@ -31,32 +32,36 @@
 }
 
 .gnb::after {
-    content: "";
+    content: '';
     width: calc(100vw - 190px);
     height: 224px;
     background-color: #ddd;
     position: absolute;
     top: 0;
     left: 180px;
+    display: none;    
 }
 
-.sub {
+.gnb .sub {
     position: absolute;
-    top: 0;
+    top: 6px;
     left: 200px;
     display: flex;
+    gap: 30px;
     width: 600px;
     z-index: 1;
+    display: none;    
 }
 
 .sub li {
     width: 120px;
+    height: 40px;
 }
 
 .sub a {
     display: block;
-    height: 56px;
-    line-height: 56px;
+    height: 40px;
+    line-height: 40px;
 }
 
 .sub a:hover {

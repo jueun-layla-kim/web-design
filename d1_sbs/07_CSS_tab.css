@@ -1,0 +1,53 @@
+.tab {
+    height: 250px;
+    padding: 20px;
+}
+
+.tab_title {
+    display: flex;
+    padding-left: 20px;
+    margin-bottom: -1px;
+}
+
+.tab_title h3 {
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #ddd;
+    border: 1px solid #999;
+    cursor: pointer;
+}
+
+.tab_title h3.active {
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+}
+
+.notice {
+    border: 1px solid #999;
+    padding: 20px 36px;
+}
+
+.notice li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notice a {
+    display: block;
+    width: 80%;
+    padding: 4px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.notice a:hover {
+    text-decoration: underline;
+}
+
+.gallery {
+    display: none;
+}
