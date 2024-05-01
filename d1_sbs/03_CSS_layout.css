@@ -1,0 +1,29 @@
+.main {
+    display: flex;
+}
+
+.header {
+    width: 200px;
+}
+
+.contents {
+    width: calc(100% - 200px);
+}
+
+.footer {
+    display: flex;
+    height: 100px;
+    align-items: center;
+}
+
+.f_logo {
+    width: 200px;
+}
+
+.f_contents {
+    flex: 1;
+}
+
+.sns {
+    width: 250px;
+}
