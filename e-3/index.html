@@ -14,17 +14,57 @@
                 <div class="logo">
                     <a href="#"><img src="./image/logo.png" alt="영상박물관 로고"></a>
                 </div>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">박물관 소개</a>
+                        <ul>
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">박물관연혁</a></li>
+                            <li><a href="#">박물관 조직도</a></li>
+                            <li><a href="#">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">전시</a>
+                        <ul>
+                            <li><a href="#">전시 리스트</a></li>
+                            <li><a href="#">전시일정</a></li>
+                            <li><a href="#">특별전</a></li>
+                            <li><a href="#">지역작가</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">체험행사</a>
+                        <ul>
+                            <li><a href="#">문화행사</a></li>
+                            <li><a href="#">진로체험</a></li>
+                            <li><a href="#">명사특강</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">커뮤니티</a>
+                        <ul>
+                            <li><a href="#">사용자메뉴얼</a></li>
+                            <li><a href="#">박물관 약도</a></li>
+                            <li><a href="#">게시판</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="user">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                </div>
             </div>
             <div class="contents">
                 <div class="banner">
-                    <a href="#">
-                        <div class="photo"><img src="image/link1.jpg" alt="배너 이미지"></div>
-                        <div class="texts">
-                            <h3>Lorem ipsum dolor sit amet.</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quasi esse aliquid.</p>
-                            <div class="arrow">next</div>
-                        </div>
-                    </a>
+                    <div class="photo"><img src="image/link1.jpg" alt="배너 이미지"></div>
+                    <div class="texts">
+                        <a href="#">
+                            <h3>Lorem ipsum dolor sit</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </a>
+                    </div>
+                    <div class="arrow"></div>
                 </div>
                 <div class="notice">
                     <h3>공지사항</h3>
@@ -41,13 +81,13 @@
                         <li>
                             <a href="#">
                                 <img src="./image/link2.jpg" alt="갤러리 이미지 2">
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum dolor sit</p>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <img src="./image/link3.jpg" alt="갤러리 이미지 3">
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum dolor sit</p>
                             </a>
                         </li>
                     </ul>
@@ -88,5 +128,21 @@
             </div>
         </div>
     </div>
+
+    <script>
+        $(function(){
+
+            // gnb
+            $(".gnb > li").hover(
+                function(){
+                    $(this).find("ul").stop().fadeIn()
+                },
+                function(){
+                    $(this).find("ul").stop().fadeOut()
+                }
+            )
+
+        })
+    </script>
 </body>
 </html>

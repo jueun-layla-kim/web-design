@@ -1,0 +1,26 @@
+.f_contents {
+    flex: 1;
+    padding: 0 40px;
+}
+
+.f_menu {
+    margin-bottom: 10px;
+}
+
+.f_menu a {
+    display: inline-block;
+    padding: 3px 16px;
+    border-right: 1px solid #999;
+}
+
+.f_menu a:first-child {
+    padding-left: 0;
+}
+
+.f_menu a:hover {
+    text-decoration: underline;
+}
+
+.f_menu a:last-child {
+    border: none;
+}

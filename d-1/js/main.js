@@ -24,8 +24,7 @@ $(function(){
         var idx = $(this).index()
         $(".tab_title h3").removeClass("active")
         $(this).addClass("active")
-        console.log(idx)
-
+        
         $(".tab_contents ul").hide()
         $(".tab_contents ul").eq(idx).show()
     })

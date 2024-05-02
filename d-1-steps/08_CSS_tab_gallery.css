@@ -1,0 +1,14 @@
+.gallery {
+    display: none;
+    border: 1px solid #999;
+    padding: 16px 36px;
+}
+
+.gallery li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.gallery img {
+    width: 180px;
+}
